@@ -1,0 +1,6 @@
+PyYAML
+scikit-learn
+scipy
+seaborn
+tensorflow
+torch

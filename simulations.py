@@ -49,7 +49,7 @@ if __name__ == '__main__':
     if not args.plot:
         if args.dataset.lower() in ['tcl', 'imca']:
             with open(os.path.join('configs', args.config), 'r') as f:
-                config = yaml.load(f)
+                config = yaml.load(f, Loader=yaml.SafeLoader)
             new_config = dict2namespace(config)
             new_config.device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 

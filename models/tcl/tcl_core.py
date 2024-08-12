@@ -13,8 +13,7 @@ FILTER_COLLECTION = 'filter'
 
 # =============================================================
 # =============================================================
-def _variable_init(name, shape, wd, initializer=tf.contrib.layers.variance_scaling_initializer(), trainable=True,
-                   collections=None):
+def _variable_init(name, shape, wd, initializer, trainable=True, collections=None):
     """Helper to create an initialized Variable with weight decay.
 
     Args:
