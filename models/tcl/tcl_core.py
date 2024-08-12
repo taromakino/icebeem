@@ -189,8 +189,7 @@ def train(total_loss,
           momentum,
           decay_steps,
           decay_factor,
-          moving_average_decay=0.9999,
-          moving_average_collections=tf.trainable_variables()):
+          moving_average_decay=0.9999):
     """Train model.
         Create an optimizer and apply to all trainable variables. Add moving
         average for all trainable variables.
